@@ -12,6 +12,7 @@ body {
   color: #4E47FF;
 
 }
+/* Reusable css */
 h2{
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -49,8 +50,9 @@ button:hover{
   background-color: #474492;
   cursor: pointer;
 }
+/* Header section */
 header{
-  background-image: url("./Assets/Hero-bg.png");
+  background-image: url("Assets/Hero-bg.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -97,6 +99,7 @@ header .container{
   width: 174px;
   height: 48px;
 }
+/* main section for all section elements */
 main{
   max-width: 1140px;
   margin: 0 auto;
