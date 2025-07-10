@@ -1,10 +1,12 @@
 body {
   background-color: #f6f8ff;
+  font-family: 'Inter', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .logo {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 34px;
   font-style: normal;
   color: #4E47FF;
@@ -35,37 +37,52 @@ p{
   font-size: 24px;
   color: #252432;
 }
+button{
+  background-color:#4E47FF ;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  
+}
 button:hover{
   background-color: #474492;
+  cursor: pointer;
 }
 header{
   background-image: url("./Assets/Hero-bg.png");
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 698px;
-  display: block;
-  justify-items: center;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
 .header-button:hover{
-    background-color: #474492;
+  background-color: #474492;
 
 }
-nav{
+header .container{
+  width: 1140px;
   display: flex;
   justify-content: space-between;
-  width: 1140px;
-  height: 151px;
+  align-items: center;
+  margin:0 auto;
+  padding-top: 40px;
 }
 
-.nav-button{
+.signup-btn{
   width: 132px;
   height: 48px;
-  border: none;
-  border-radius: 10px;
-  background-color: #4E47FF;
-  color:#FFFFFF;
-  margin-top: 23px;
+
 }
 .primary-heading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 .primary-heading h1 {
@@ -79,10 +96,6 @@ nav{
 .primary-heading button{
   width: 174px;
   height: 48px;
-  background-color: #4E47FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 10px;
 }
 main{
   max-width: 1140px;
@@ -106,10 +119,6 @@ main{
 .preview-button{
   width: 229px;
   height: 38px;
-  background-color: #4E47FF;
-  color: white;
-  border: none;
-  border-radius: 10px;
 }
 .rating-section{
   height: 306px;
@@ -120,31 +129,31 @@ main{
 }
 /* Stats Section */
 .stats {
-    background-color: #eef2ff;
-    padding: 2%;
-    text-align: center;
-    border-radius: 24px;
-    height: 306px;
+  background-color: #eef2ff;
+  padding: 2%;
+  text-align: center;
+  border-radius: 24px;
+  height: 306px;
 }
 
 .stats h2 {
-    font-size: 40px;
-    margin-bottom: 40px;
+  font-size: 40px;
+  margin-bottom: 40px;
 }
 
 .stat-items {
-    margin-top: -70px;
-    display: flex;
-    justify-content: space-around;
+  margin-top: -70px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .stat-item h3 {
-    font-size: 80px;
-    color: #6c63ff;
-    margin-bottom: 10px;
+  font-size: 80px;
+  color: #6c63ff;
+  margin-bottom: 10px;
 }
 .stat-item p {
-   color: #252432;
+  color: #252432;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -155,38 +164,38 @@ main{
 }
 /* Testimonials Section */
 .testimonials {
-    padding: 100px 0;
-    text-align: center;
+  padding: 100px 0;
+  text-align: center;
 
 }
 
 .testimonials h2 {
-    font-size: 40px;
-    margin-bottom: 40px;
+  font-size: 40px;
+  margin-bottom: 40px;
 }
 
 .testimonial-items {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .testimonial-item {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 290px;
-    height: 283px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 290px;
+  height: 283px;
 }
 
 .stars i {
-    margin-bottom: 10px;
-    margin: 0px 5px 0px 0px;
+  margin-bottom: 10px;
+  margin: 0px 5px 0px 0px;
 }
 
 .testimonial-item h4 {
-    font-size: 29px;
-    margin-bottom: 10px;
+  font-size: 29px;
+  margin-bottom: 10px;
 }
 .testimonial-item p{
   font-family: Arial, Helvetica, sans-serif;
@@ -194,16 +203,16 @@ main{
 }
 
 .review{
-    display: flex;
-    align-items: center;
-    margin-top: 29px;
+  display: flex;
+  align-items: center;
+  margin-top: 29px;
 }
 
 .review img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 .name-text {
   margin-top: 20px;
@@ -220,6 +229,7 @@ main{
   font-size: 10px; 
   color: #adb5bd;
   margin-top: -20px;
+  text-align: left;
 }
 /* Ready to Focus Section */
 .ready-to-focus {
@@ -241,6 +251,7 @@ main{
   background-color:#4E47FF;
   border-radius:10px ;
   border: none;
+  color: white;
 }
 .ready-to-focus .container button:hover{
   background-color: #474492;
@@ -266,37 +277,39 @@ main{
 }
 /* Contact Section */
 .contact .container {
-    display: flex;
-    padding: 100px 20px;
-    align-items: center;
-    max-width: 100%;
+  display: flex;
+  padding: 100px 20px;
+  align-items: center;
+  max-width: 100%;
 }
 
 .contact .text-content {
-    flex: 1;
+  flex: 1;
 }
 
 .contact h2 {
-    font-size: 97px;
+  font-size: 97px;
 }
 
 .contact .form-content {
-    width: 45%;
+  width: 45%;
 }
 
 form label {
-    display: block;
-    margin-bottom: 10px;
-    font-family: Impact;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
 }
 
 form input, form textarea {
-    width: 95%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+  width: 95%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 form button{
   width: 500px;
@@ -308,4 +321,45 @@ form button{
 }
 form button:hover{
   background-color: #474492;
+}
+footer{
+  width: 100%;
+  background-color: white;
+
+}
+.footer-content{
+  width: 750px;
+  height: 400px; ;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.footer-logo{
+  font-size: 100px;
+}
+footer p{
+  color: #8987A1;
+  margin-top:-60px;
+}
+.footer-nav{
+  display: flex;
+  justify-content: center; /* horizontally center */
+}
+
+.footer-nav ul{
+  display: flex;
+  list-style: none; 
+  gap: 48px; 
+  padding: 0;
+  margin: 0;
+}
+.footer-nav ul li{
+  font-family: 'AG Body', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #8987A1; 
+  
 }
