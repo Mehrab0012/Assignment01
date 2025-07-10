@@ -44,11 +44,16 @@ button{
   padding: 10px 20px;
   border-radius: 10px;
   color: white;
+  padding: 14px 35px;
   
 }
 button:hover{
-  background-color: #474492;
+  background-color: #6c63ff;
+  border-radius: 14px;
+  transition: border-radius 0.3s ease-in-out;
+  text-shadow: 0 0 10px #00f7ff;
   cursor: pointer;
+  
 }
 /* Header section */
 header{
@@ -121,7 +126,7 @@ main{
 }
 .preview-button{
   width: 229px;
-  height: 38px;
+  height: 48px;
 }
 .rating-section{
   height: 306px;
@@ -357,6 +362,9 @@ footer p{
   padding: 0;
   margin: 0;
 }
+.footer-content ul a{
+  text-decoration: none;
+}
 .footer-nav ul li{
   font-family: 'AG Body', sans-serif;
   font-size: 14px;
@@ -364,5 +372,6 @@ footer p{
   line-height: 140%;
   letter-spacing: 0.2px;
   color: #8987A1; 
+  text-decoration: none;
   
 }
