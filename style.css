@@ -264,3 +264,48 @@ main{
   border-radius: 48px;
 
 }
+/* Contact Section */
+.contact .container {
+    display: flex;
+    padding: 100px 20px;
+    align-items: center;
+    max-width: 100%;
+}
+
+.contact .text-content {
+    flex: 1;
+}
+
+.contact h2 {
+    font-size: 97px;
+}
+
+.contact .form-content {
+    width: 45%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: Impact;
+}
+
+form input, form textarea {
+    width: 95%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+form button{
+  width: 500px;
+  height: 62px;
+  background-color: #4E47FF;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+form button:hover{
+  background-color: #474492;
+}
